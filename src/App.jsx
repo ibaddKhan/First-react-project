@@ -9,7 +9,13 @@ function App() {
   }
 
   function subtractNum() {
+    if (sum === 0) {
+      console.log("Cannot go below 0")
+      alert("Cannot go below 0")
+      return
+    }
     setNum(sum - 1);
+    
   }
   return (
     <>
